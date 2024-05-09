@@ -10,3 +10,27 @@ A key aspect of the Vendor Management System is its ability to evaluate vendor p
 
 Overall, the Vendor Management System serves as a powerful tool for organizations to optimize their vendor relationships, enhance supply chain efficiency, and drive operational excellence through a centralized, user-friendly interface.
 
+**Steps for installation**
+
+python -m venv venv
+
+source venv/Scripts/activate
+
+pip install django
+
+pip install djangorestframework
+
+pip install -r requirements.txt
+
+python manage.py makemigrations 
+
+python manage.py migrate
+
+python manage.py createsuperuser 
+
+python manage.py runserver
+
+http://localhost:8000/vendors/  --for vendor list
+
+http://localhost:8000/admin  --for admin
+
